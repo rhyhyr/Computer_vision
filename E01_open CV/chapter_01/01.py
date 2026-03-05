@@ -3,7 +3,6 @@ import numpy as np
 import sys
 
 # 1. cv.imread()를 사용하여 이미지 로드
-# 'soccer.jpg' 파일이 파이썬 파일과 같은 폴더에 있어야 합니다.
 img = cv.imread('soccer.jpg') 
 
 # 이미지가 제대로 로드되지 않았을 경우 처리
