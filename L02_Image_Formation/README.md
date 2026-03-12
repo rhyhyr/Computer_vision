@@ -99,14 +99,8 @@ $$\begin{bmatrix} x' \\ y' \end{bmatrix} = M \begin{bmatrix} x \\ y \\ 1 \end{bm
 
 ---
 
-## 5. 실행 결과 요약
 
-* 이미지가 중앙에서 **30도** 돌아가며 약간 작아졌습니다.
-* 동시에 오른쪽으로 **80픽셀**, 위쪽으로 **40픽셀** 이동하여 배치됩니다.
-
----
-
-## 4. 실행 결과
+## 5. 실행 결과
 <img width="2371" height="823" alt="image" src="https://github.com/user-attachments/assets/e9974566-0775-4807-8207-dda388dbcb26" />
 
 
