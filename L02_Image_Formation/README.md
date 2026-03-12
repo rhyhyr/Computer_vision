@@ -47,5 +47,66 @@ $$K = \begin{bmatrix} f_x & 0 & c_x \\ 0 & f_y & c_y \\ 0 & 0 & 1 \end{bmatrix}$
 ## 4. 실행 결과
 <img width="1294" height="488" alt="스크린샷 2026-03-12 160419" src="https://github.com/user-attachments/assets/4814ab53-166d-421f-a33e-af630879c2a2" />
 
+깃허브 리드미에 추가하기 좋은 두 번째 주제, **이미지 변환(Image Transformation)** 내용을 정리해 드립니다. 이번 주제는 카메라로 찍은 이미지를 기하학적으로 어떻게 조작하는지(Affine Transformation)를 다룹니다.
+
+---
+
+# 🔄 Image Rotation & Transformation
+
+이 프로젝트는 이미지 처리의 기초인 **어파인 변환(Affine Transformation)**을 활용하여 이미지의 회전, 크기 조절, 평행이동을 동시에 적용하는 방법을 다룹니다.
+
+## 1. 개요: 어파인 변환(Affine Transformation)이란?
+
+어파인 변환은 선의 평행성을 유지하면서 이미지를 변형시키는 방법입니다. 변환 행렬 $M$을 이용하여 이미지의 각 픽셀 $(x, y)$를 새로운 좌표 $(x', y')$로 이동시킵니다.
+
+$$\begin{bmatrix} x' \\ y' \end{bmatrix} = M \begin{bmatrix} x \\ y \\ 1 \end{bmatrix}$$
+
+이 프로젝트에서는 **회전(Rotation)**, **스케일링(Scaling)**, **평행이동(Translation)**을 하나의 행렬에 담아 처리합니다.
+
+---
+
+## 2. 주요 단계 및 요구사항
+
+1. **회전:** 이미지 중심을 기준으로 **+30도** 회전
+2. **크기 조절:** 회전과 동시에 크기를 **0.8배**로 축소
+3. **평행이동:** 결과물을 **x축 +80px, y축 -40px** 이동
+
+---
+
+## 3. 구현 코드
+
+<img width="555" height="684" alt="image" src="https://github.com/user-attachments/assets/b7cb2c7f-a1e0-4bb0-a114-09d90141a814" />
+
+---
+
+## 4. 핵심 함수 설명
+
+### 🛠 `cv2.getRotationMatrix2D(center, angle, scale)`
+
+회전을 위한 2x3 변환 행렬을 생성합니다.
+
+* **center:** 회전의 중심축 (x, y)
+* **angle:** 회전 각도 (양수는 반시계 방향)
+* **scale:** 이미지 배율 (1.0은 원본 크기)
+
+### 🛠 `cv2.warpAffine(src, M, dsize)`
+
+생성된 행렬 $M$을 실제 이미지에 적용합니다.
+
+* **src:** 원본 이미지
+* **M:** 2x3 변환 행렬
+* **dsize:** 출력 이미지 크기 (가로, 세로)
+
+---
+
+## 5. 실행 결과 요약
+
+* 이미지가 중앙에서 **30도** 돌아가며 약간 작아졌습니다.
+* 동시에 오른쪽으로 **80픽셀**, 위쪽으로 **40픽셀** 이동하여 배치됩니다.
+
+---
+
+## 4. 실행 결과
+<img width="2371" height="823" alt="image" src="https://github.com/user-attachments/assets/e9974566-0775-4807-8207-dda388dbcb26" />
 
 
