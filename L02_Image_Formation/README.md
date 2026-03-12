@@ -41,7 +41,6 @@ $$K = \begin{bmatrix} f_x & 0 & c_x \\ 0 & f_y & c_y \\ 0 & 0 & 1 \end{bmatrix}$
 <img width="731" height="970" alt="image" src="https://github.com/user-attachments/assets/29c42cad-d0d9-42b4-9827-c53c6e582e55" />
 <img width="738" height="527" alt="image" src="https://github.com/user-attachments/assets/bf55b797-c005-442d-9e5c-70c6be063b06" />
 
-```
 
 ---
 
