@@ -46,5 +46,7 @@ $$K = \begin{bmatrix} f_x & 0 & c_x \\ 0 & f_y & c_y \\ 0 & 0 & 1 \end{bmatrix}$
 ---
 
 ## 4. 실행 결과
- <img width="1294" height="488" alt="image" src="https://github.com/user-attachments/assets/9e9b742d-c9d0-4101-853c-020398204c53" />
+<img width="1294" height="488" alt="스크린샷 2026-03-12 160419" src="https://github.com/user-attachments/assets/4814ab53-166d-421f-a33e-af630879c2a2" />
+
+
 
