@@ -1,6 +1,5 @@
 # 📸 Camera Calibration with OpenCV
 
-이 프로젝트는 OpenCV를 사용하여 카메라의 고유 파라미터를 계산하고, 렌즈로 인해 발생하는 이미지 왜곡을 보정하는 프로세스를 담고 있습니다.
 
 ## 1. 개요: 왜 카메라 캘리브레이션이 필요한가?
 
@@ -46,8 +45,6 @@ $$K = \begin{bmatrix} f_x & 0 & c_x \\ 0 & f_y & c_y \\ 0 & 0 & 1 \end{bmatrix}$
 
 ## 4. 실행 결과
 <img width="1294" height="488" alt="스크린샷 2026-03-12 160419" src="https://github.com/user-attachments/assets/4814ab53-166d-421f-a33e-af630879c2a2" />
-
-깃허브 리드미에 추가하기 좋은 두 번째 주제, **이미지 변환(Image Transformation)** 내용을 정리해 드립니다. 이번 주제는 카메라로 찍은 이미지를 기하학적으로 어떻게 조작하는지(Affine Transformation)를 다룹니다.
 
 ---
 
