@@ -1,6 +1,6 @@
 # 🔍 Edge Detection & Image Segmentation
 
-이 프로젝트는 이미지에서 중요한 특징인 **에지(Edge)**를 추출하고, 원하는 객체만 분리하는 **영역 분할(Segmentation)** 기법들을 다룹니다.
+이 프로젝트는 이미지에서 중요한 특징인 에지(Edge)를 추출하고, 원하는 객체만 분리하는 **영역 분할(Segmentation)** 기법들을 다룹니다.
 
 ---
 
