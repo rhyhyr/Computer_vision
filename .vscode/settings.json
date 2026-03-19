@@ -1,7 +1,7 @@
 {
     "python-envs.pythonProjects": [
         {
-            "path": "E01_open CV",
+            "path": "L01_open CV",
             "envManager": "ms-python.python:venv",
             "packageManager": "ms-python.python:pip"
         }
