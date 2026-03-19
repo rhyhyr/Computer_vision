@@ -1,8 +1,3 @@
-<img width="1204" height="666" alt="image" src="https://github.com/user-attachments/assets/f264af7e-b7f0-4e61-8be1-75692d8120c2" /># 🔍 Edge Detection & Image Segmentation
-
-이 프로젝트는 이미지에서 중요한 특징인 에지(Edge)를 추출하고, 원하는 객체만 분리하는 **영역 분할(Segmentation)** 기법들을 다룹니다.
-
----
 
 ## 01. 🧭 소벨 에지 검출 (Sobel Edge Detection)
 
