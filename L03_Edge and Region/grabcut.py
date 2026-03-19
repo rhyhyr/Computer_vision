@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # 1. 이미지 불러오기
 # 'coffee_cup.jpg' 또는 실제 파일 경로로 수정하세요.
-img = cv2.imread('coffee_cup.jpg')
+img = cv2.imread('coffee cup.jpg')
 
 if img is None:
     print("이미지를 불러올 수 없습니다. 경로를 확인하세요.")
