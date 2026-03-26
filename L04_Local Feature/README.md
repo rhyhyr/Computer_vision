@@ -69,8 +69,7 @@ sift = cv2.SIFT_create()
 kp1, des1 = sift.detectAndCompute(img1, None)
 kp2, des2 = sift.detectAndCompute(img2, None)
 
-# 3. '짝짓기 매니저' 만들기
-# crossCheck=True: 서로가 서로에게 1순위일 때만 커플로 인정! (정확도 UP)
+# crossCheck=True: 각자 1순위 일때만 인정
 bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=True)
 
 # 4. 비슷한 점끼리 매칭하기
@@ -79,7 +78,7 @@ matches = bf.match(des1, des2)
 # 거리(차이점)가 짧은 순서대로 정렬 (가장 닮은 커플부터!)
 matches = sorted(matches, key=lambda x: x.distance)
 
-# 5. 상위 50개 커플만 선으로 이어서 보여주기
+# 5. 상위 50개만 선으로 이어서 보여주기
 res = cv2.drawMatches(img1, kp1, img2, kp2, matches[:50], None, 
                       flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
 
@@ -127,7 +126,7 @@ bf = cv2.BFMatcher()
 matches = bf.knnMatch(des1, des2, k=2)
 
 # 3. 진짜 닮은 점만 골라내기 (Lowe's Ratio Test)
-# 1순위가 2순위보다 훨씬 압도적으로 닮았을 때만 채택!
+# 1순위가 2순위보다 훨씬 압도적으로 닮았을 때만 채택
 good_matches = []
 for m, n in matches:
     if m.distance < 0.7 * n.distance:
