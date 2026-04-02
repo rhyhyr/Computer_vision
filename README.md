@@ -104,5 +104,6 @@ model.fit(train_images, train_labels, epochs=10)
 # prediction = model.predict(img)
 # print(f"이 사진은 {np.argmax(prediction)}번 클래스(개)로 보입니다.")
 ```
+<img width="659" height="393" alt="image" src="https://github.com/user-attachments/assets/eff1e61c-2973-4b74-a5e5-ee8c064a56f0" />
 
 ---
