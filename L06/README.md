@@ -68,6 +68,10 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
+
+<img width="648" height="399" alt="image" src="https://github.com/user-attachments/assets/e58ac945-7d54-48dc-86f3-bad593248ba1" />
+
+
 02. 👺 Mediapipe를 활용한 얼굴 랜드마크 추출 (Face Mesh)
 "얼굴에 468개의 점을 찍어 미세한 움직임과 표정을 포착합니다."
 
